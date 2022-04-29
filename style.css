@@ -1,0 +1,60 @@
+/*//////NAVBAR//////*/
+a{
+    text-decoration: none;
+}
+
+.position-logo
+{
+    position: relative;
+    margin-bottom: 0;
+    margin-left: 90%;
+}
+
+.positioned
+{
+    position: relative;
+}
+
+.texto-logo
+{
+    color: #db1efb;
+    font-weight: bold;
+    font-family: 'Akshar', sans-serif;
+}
+
+
+
+.color-navbar
+{
+    background-color: #020310;
+    /*background-color: #8af3f3;*/
+}
+
+/*//////MAIN//////*/
+
+.background-appearance
+{
+    background-color: #120b34;
+    height: 100vh;
+    color: aliceblue;
+}
+
+
+.button-navbar-iniciarSesion
+{
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #020310 !important;
+    color: #db1efb;
+}
+
+.button-navbar-registrarte{
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #db1efb;
+    color: aliceblue;
+}
+
+
+
+

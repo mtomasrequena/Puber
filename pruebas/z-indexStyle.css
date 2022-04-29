@@ -1,0 +1,53 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 40em;
+    padding-top: 7em;
+}
+
+section{
+    border: 2px dashed steelblue;
+    padding: 2em;
+    margin: 5em auto;
+    width: 400px;
+    height: 440px;
+}
+
+div{
+    border-radius: 5px;
+    color: #444;
+    font-size: 2.8em;
+    font-weight: bold;
+    line-height: 100px;
+    padding: .5em;
+    text-align: center;
+    background: rgba(173,216,230,.7);
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.uno
+{
+    background: palegreen;
+    top: 50px;
+    left: 50px;
+    z-index: 3;
+}
+
+.dos
+{
+    background: tomato;
+    top: 10px;
+    left: 100px;
+    z-index: 1;
+}
+
+.tres
+{
+    background: lightblue;
+    left: 150px;
+    top: -50px;
+    z-index: 2;
+}
