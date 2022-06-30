@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<body>
-    
-</body>
-</html>
+<?php
+require_once('../../Componentes/header-home.html')
+?>
 <body>
     <!--COMPONENTE barra de Navegacion-->
 
