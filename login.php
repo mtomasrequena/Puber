@@ -1,4 +1,8 @@
 <?php
+    require_once('backend/model/Usuario.php');
+    // Conectarme a la Base de Datos
+    $usuario = new Usuario();
+
 
     if(  !isset( $_POST['email'] ) && !isset($_POST['password']) ) {
         echo "Datos ivalido";
@@ -7,18 +11,21 @@
 
     $email = $_POST['email'];
     $password = $_POST['password'];
-
-    $email_system = 'admin@gmail.com';
-    $pass_system = '123';
-
-    if( $email == $email_system && $password == $pass_system ){
-        echo "Log Ok";
+    $respuesta = $usuario->loguear($email, $password);
+  
+    if( count($respuesta) > 0 ){
         // llamar a una funcion para el login
         session_start();
-        $_SESSION['user'] = $email;
+        $_SESSION['email'] = $respuesta[0]['email'];
+        $_SESSION['persona_id'] = $respuesta[0]['persona_id'];
+        $_SESSION['rol_id'] = $respuesta[0]['rol_id'];
 
         header('location: Paginas/home-dependencias/home.php');
     } else {
-        echo "Email o pass Invalidos";
+        echo "<div class='alert alert-warning mt-4' role='alert'>
+                Usuario o Contraseña incorrectos
+            </div>";
     }
+
+
 ?>
