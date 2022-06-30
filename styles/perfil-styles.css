@@ -1,0 +1,47 @@
+@import url(../../styles/home.css);
+
+
+.container_picture{
+    background-image: url(../../img/background-avatar.jfif);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 58%;
+    padding: 3% 0 1% 0;
+    margin: 6% 18% 0 18%;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+}
+
+
+
+.container_avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.container_img{
+    border-radius: 60%;
+    width: auto;
+    height: 30vh;
+}
+
+.container_name-avatar{
+    color: #FFF;
+    font-size: 4.2rem;
+    font-weight: bold;
+}
+
+.container_info{
+
+}
+
+.container_item{
+    padding: 0 3%;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin:  0 0 2% 0 ;
+}

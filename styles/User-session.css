@@ -1,0 +1,80 @@
+
+body{
+    background: linear-gradient(to right, #9A35EF , #4B00C4, #4176D6); width: 100%; height: 100%;
+}
+
+.container_father{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin-top: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.container_sizeLogo{
+    font-size: 6rem;
+    color: white;
+    /*animation-name: animatedlogo;
+    animation-duration: 4s;
+    animation-fill-mode: both;*/
+    margin: 0 0 -5rem 0;
+}
+
+.container_form{
+ width: 40vh;
+ margin: 7rem 0 0 0;
+}
+
+.container_space-button{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+    transform: scale(.87);
+}
+
+.container_style-btn{
+    width: 30vh;
+    height: 5vh;
+    font-size: 1.2rem;
+    padding: .6rem;
+    color: white;
+    font-weight: bold;
+    background :linear-gradient(to right, #9A35EF , #4B00C4, #4176D6); width: 100%; height: 100%;
+}
+
+button:hover{
+    color: white !important;
+    transform: scale(.9);
+    transition: transform 1s;
+}
+
+label{
+ color: white;
+ font-weight: bold;
+}
+
+.form-div{
+  margin: 0 0 3rem 0;
+}
+
+#p{
+    animation-name: animatedlogo;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    display: inline-flex;
+}
+
+
+
+
+@keyframes animatedlogo{
+    0% { transform: translate(0%, -200%) scale(1.25, 0.75); }
+    50% { transform: translate(0%, -150%) scale(1, 1); }
+    60% { transform: translate(0%, -150%) rotate(15deg); }
+    65% { transform: translate(0%, -150%) rotate(-15deg); }
+    70% { transform: translate(0%, -150%) rotate(15deg); }
+    80% { transform: translate(0%, -150%) rotate(-15deg); }
+    98% { transform: translate(0%, 0%) scale(1.25, 0.75); }
+}
+

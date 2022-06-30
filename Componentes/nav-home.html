@@ -1,0 +1,107 @@
+    <!--barra de Navegacion-->
+    <div class="position-navbar">
+      <!--Barra OCULTA de navegacion-->
+      <nav class="navbar navbar-expand-lg color-navbar navbar-dimension collapse" id="collapseNavbar" style="padding: 0.3%;">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light color-navbar navbar-dimension "></nav> -->
+        
+          <div class="container-fluid positioned d-flex justify-content-end buttons-navbar-oculta">
+          
+            <!--Botones Viajes, Perfil y ayuda-->
+            <div class="d-flex justify-content-end">
+              
+              <!--Boton Viajes-->
+              <a href="../home-dependencias/viajes_pasajero.php" role="button"><!--sign-in.html-->
+                <button type="button" class="btn btn-dark botones-navbar-home ">
+                  Viajes
+                </button>
+              </a>
+              
+              <!--Boton Ayuda-->
+              <a href="../home-dependencias/ayuda.php" class="color-button-navbar margenes-de-botones-navbar" role="button"><!--sign-up.html-->
+                <button type="button" class="btn btn-dark botones-navbar-home">
+                  Ayuda
+                </button>
+              </a>
+              
+              <!--Boton Perfil-->
+              <div class="btn-group">
+                <a href="../home-dependencias/perfil.php" role="button"><!--sign-in.html-->
+                  <button type="button" class="btn btn-dark boton-navbar-home-perfil">
+                    Perfil
+                  </button>
+                </a>
+                <!--Boton Cerrar Sesion-->
+                <button type="button" class="btn btn-dark botones-navbar-home dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu clase-prueba">
+                  <button class="btn btn-dark">
+                    Cerrar Sesion
+                  </button>
+                </ul>
+              </div>
+              
+            </div>
+          
+          </div>
+        
+        </nav>
+    <!--Barra de navegacion-->
+      <nav class="navbar navbar-expand-lg color-navbar navbar-dimension ">
+      <!-- <nav class="navbar navbar-expand-lg navbar-light color-navbar navbar-dimension "></nav> -->
+      
+        <div class="container-fluid positioned">
+        
+          <!--Boton Toggler-->
+          <a type="button" class="btn positioned-absolute-button-toggler btn ocultador-icono-toggle" data-bs-toggle="collapse" href="#collapseNavbar" role="button" aria-expanded="false" aria-controls="collapseNavbar">
+            <!-- <img src="../Puber/img/icons8-menú-24-rosa.png" alt="icon-menu"></img> -->
+            <i class="fas fa-bars" style="color: #db1efb;"></i>
+          </a>
+        
+          <!--Logo-->
+          <div class="position-logo">
+            <a  href="../home-dependencias/home.php" role="button">
+              <h1 class="texto-logo ">
+                Puber
+              </h1>
+            </a>
+          </div>
+          
+          <!--Botones Viajes, Perfil y Ayuda-->
+          <div class="d-flex justify-content-end ocultador">
+            <!--Boton Viajes-->
+            <a href="../home-dependencias/viajes_pasajero.php" role="button"><!--sign-in.html-->
+              <button type="button" class="btn btn-dark botones-navbar-home ">
+                Viajes
+              </button>
+            </a>
+            <!--Boton Ayuda-->
+            <a href="../home-dependencias/ayuda.php" class="color-button-navbar margenes-de-botones-navbar" role="button"><!--sign-up.html-->
+              <button type="button" class="btn btn-dark botones-navbar-home">
+                Ayuda
+              </button>
+            </a>
+            
+            <!--Boton Perfil-->
+            <div class="btn-group">
+              <a href="../home-dependencias/perfil.php" role="button"><!--sign-in.html-->
+                <button type="button" class="btn btn-dark boton-navbar-home-perfil">
+                  Perfil
+                </button>
+              </a>
+              <button type="button" class="btn btn-dark botones-navbar-home dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu clase-prueba">
+                <button class="btn btn-dark">
+                  Cerrar Sesion
+                </button>
+              </ul>
+            </div>
+  
+          </div>
+        
+        </div>
+      
+      </nav>
+    </div>

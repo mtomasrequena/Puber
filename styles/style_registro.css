@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+
+header{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+body {
+    background-image: url(../flujo-home-usuario/img-home/fondo.jpg);
+    background-size: cover;
+}
+
+.formulario-registro{
+    width: 400px;
+    background: #241343;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.formulario-registro h4{
+    font-size: 22px;
+    margin-bottom: 26px;
+    text-align: center;
+}
+
+.controls{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 2px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.formulario-registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formulario-registro .botons{
+    width: 100%;
+    border: none;
+    background-color: #1f53c5;
+    color: white;
+    padding: 12px;
+    margin: 16px 0;
+    margin-top: 40px;
+    font-size: 16px;
+}

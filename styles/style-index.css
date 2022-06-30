@@ -1,0 +1,375 @@
+/*/// Clases Globales ///*/
+a{
+  text-decoration: none;
+}
+
+main{
+  margin: 0;
+  padding: 0;
+  padding-top: 2.5em;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #020310;
+}
+
+/*////// NAVBAR //////*/
+
+.position-navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+
+.button-navbar-iniciarSesion
+{
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: #020310 !important;
+  color: #db1efb;
+}
+
+.button-navbar-registrarte{
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  background-color: #db1efb;
+  color: aliceblue;
+  border-radius: 1em;
+}
+
+.position-logo
+{
+  position: relative;
+  left: 5%;
+  top: 2%;
+  margin-bottom: 10;
+}
+
+.texto-logo
+{
+  color: #db1efb;
+  font-weight: bold;
+  font-family: 'Akshar', sans-serif;
+}
+
+.positioned
+{
+  position: relative;
+  top: 0%;
+}
+
+.positioned-absolute-button-toggler
+{
+  position: absolute;
+  right: 5%;
+}
+
+.color-navbar
+{
+  background-color: #020310;
+  /* background-color: #8af3f3; */
+}
+
+.ocultador
+{
+  visibility: visible;
+}
+
+@media (max-width: 900px)
+{
+  .ocultador
+  {
+    visibility: hidden;
+  }
+}
+
+.ocultador-icono-toggle
+{
+  visibility: hidden;
+}
+
+
+@media (max-width: 900px)
+{
+  .ocultador-icono-toggle
+  {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 900px)
+{
+  .buttons-navbar-oculta
+  {
+    position: relative;
+    visibility: hidden;
+  }
+  #collapseNavbar
+  {
+    position: absolute;
+    visibility: hidden;
+  }
+} 
+
+/*////// MAIN - Pantalla Principal //////*/
+
+.background-top-appearance
+{
+  background-color: #120b34;
+  height: 15px;
+  color: aliceblue;
+  padding-bottom: 31em;
+}
+
+.background-down-appearance
+{
+  background-image: url(../img/MapaBackground.JPG);
+  height: 50vh;
+  padding-bottom: 1em;
+}
+
+/*Penel Welcome - "Ponete al volante" + Boton*/
+.contrast-panel-bienvenida
+{
+  background-color: rgba(255, 255, 255, 0.904);
+  font-size: 4em;
+  /*Position*/
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 220px;
+  box-sizing: border-box;
+  /*Measures*/
+  width: 9.5em;
+  height: 450px;
+  border-radius: 25px;
+  border: #da1efb34;
+  border-style: solid;
+}
+
+.panel-bienvenida
+{
+  /*Fuente*/
+  font-size: 4em;
+  font-weight: 200;
+  align-items: center;
+  /*Measures*/
+  width: 9.5em;
+  height: 450px;
+  border-radius: 25px;
+  border: #da1efb1c;
+  border-style: solid;
+  /*Position*/
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 220px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  padding-right: 55px;
+  padding-left: 55px;
+}
+
+@media (max-width: 737px)
+{
+  .panel-bienvenida
+  {
+    width: 8.8em;
+  }
+  .contrast-panel-bienvenida
+  {
+    width: 8.8em;
+  }
+}
+
+@media (max-width: 700px)
+{
+  .panel-bienvenida
+  {
+    width: 8.65em;
+  }
+  .contrast-panel-bienvenida
+  {
+    width: 8.65em;
+  }
+}
+
+@media (max-width: 625px)
+{
+  .panel-bienvenida
+  {
+    width: 8.50em;
+  }
+  .contrast-panel-bienvenida
+  {
+    width: 8.50em;
+  }
+  .texto-grande-panel-bienvenida
+  {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 615px)
+{
+  .panel-bienvenida
+  {
+    width: 8.45em;
+  }
+  .contrast-panel-bienvenida
+  {
+    width: 8.45em;
+  }
+}
+
+@media (max-width: 600px)
+{
+  .panel-bienvenida
+  {
+    width: 8.15em;
+  }
+  .contrast-panel-bienvenida
+  {
+    width: 8.15em;
+  }
+}
+
+@media (max-width: 585px)
+{
+  .panel-bienvenida
+  {
+    width: 7.80em;
+  }
+  .contrast-panel-bienvenida
+  {
+    width: 7.80em;
+  }
+  .texto-grande-panel-bienvenida
+  {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 540px)
+{
+  .button-navbar-iniciarSesion
+  {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .button-navbar-registrarte
+  {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .panel-bienvenida
+  {
+    width: 6em;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .contrast-panel-bienvenida
+  {
+    width: 6em;
+  }
+  .texto-grande-panel-bienvenida
+  {
+    font-size: 70%;
+  }
+}
+
+.texto-grande-panel-bienvenida
+{
+  /*Background*/
+  -webkit-background-clip: text;
+  background-image: url(../img/degrade-solana.png);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+    /*Text*/
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.boton-registro-conductor
+{
+  /* -webkit-background-clip: text;
+  background-image: url(../img/degrade-solana.png);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  /*Fuente*/
+  position: relative;
+  font-size: 25.5px !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+  top: 10%;
+  margin-bottom: 20%;
+}
+
+@media (max-width: 414px)
+{
+  .button-navbar-iniciarSesion
+  {
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+  }
+  .button-navbar-registrarte
+  {
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+  }
+  .panel-bienvenida
+  {
+    width: 5em;
+    height: 420px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .contrast-panel-bienvenida
+  {
+    width: 5em;
+    height: 420px;
+  }
+  .boton-registro-conductor
+  {
+      /*Posicion*/
+    padding-left: 75px;
+    padding-right:75px;
+    /*Fuente*/
+    font-size: 14.5px !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .texto-grande-panel-bienvenida
+  {
+    font-size: xx-large;
+  }
+}
+
+@media (max-width: 414px)
+{
+  .button-navbar-iniciarSesion
+  {
+    font-size: 12px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  .button-navbar-registrarte
+  {
+    font-size: 12px;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+}

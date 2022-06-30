@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<header>
+  <h1>𝓟𝓾𝓫𝓮𝓻</h1>
+</header>
+<body>
+  <form action="registro_conductor.php" method="POST">
+    <section class="formulario-registro">
+      <h4>Formulario de Registro para Choferes</h4>
+      <p>Complete la siguiente información:</p>
+      <div>
+        <label for="nombres">Nombre:</label>
+        <input class="controls" type="text" name="nombres" id="nombres">
+      </div>
+      <div>
+        <label for="apellidos">Apellido:</label>
+        <input class="controls" type="text" name="apellidos" id="apellidos">
+      </div>
+      <div>
+        <label for="fechanac">Fecha de Nacimiento:</label>
+        <input class="controls" max="2004-05-11" min="1900-01-01" type="date" name="fechanac" id="fechanac">
+      </div>
+      <div>
+        <label for="dni">DNI:</label>
+        <input class="controls" type="number" name="dni" id="dni">
+      </div>
+      <div>
+        <label for="modeloauto">Modelo del Vehículo:</label>
+        <input class="controls" type="text" name="modeloauto" id="modeloauto">
+      </div>
+      <div>
+        <label for="matricula">Matricula:</label>
+        <input class="controls" type="text" name="matricula" id="matricula">
+      </div>
+      <div>
+        <label for="email">Correo Electrónico:</label>
+        <input class="controls" type="email" name="email" id="email">
+      </div>
+      <div>
+        <label for="contraseña">Contraseña:</label>
+        <input class="controls" type="password" name="contraseña" id="contraseña">
+      </div>
+      <div>
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">Estoy de acuerdo con los <a target="_blank" href="flujo-home-usuario/terminos.html">Términos y Condiciones</label>
+      </div>
+      <input class="botons" type="submit" value="Registrar">
+    </section>
+    </form>
+</body>
+</html>

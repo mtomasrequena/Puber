@@ -1,0 +1,25 @@
+@import url(../../styles/home.css);
+
+.contenedor-de-formulario
+{
+  margin: auto;
+  padding: auto;
+  width: 60%;
+  display: block;
+  box-sizing: border-box;
+  margin-top: 18%;
+  background-color:rgb(234, 131, 248);
+}
+
+.leyendas
+{
+  font-size: 20px ;
+  font-family: 'DM mono';
+  color:indigo;
+
+}
+
+.boton
+{
+  padding: 0%;
+}
