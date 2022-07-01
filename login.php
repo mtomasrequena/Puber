@@ -12,7 +12,7 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
     $respuesta = $usuario->loguear($email, $password);
-  
+
     if( count($respuesta) > 0 ){
         // llamar a una funcion para el login
         session_start();

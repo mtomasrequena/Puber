@@ -23,7 +23,7 @@
                                         array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8")); // codificación de caracteres uft-8
                 $this->objPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 $this->estado = "Conectado";
-              }catch(PDOException $e){
+            }catch(PDOException $e){
                 $this->estado = "ERRORRRRRRr: " . $e->getMessage();
                 echo( $e->getMessage() );
             }

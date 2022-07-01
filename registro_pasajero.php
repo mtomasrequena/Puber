@@ -1,14 +1,14 @@
 <?php
- require_once('backend/model/Usuario.php');
- $usuario = new Usuario();
- if(!isset( $_POST['email'] ) && !isset( $_POST['dni'])
-  && !isset( $_POST['nombre']) && !isset($_POST['contraseña'])) {
-    echo "<div >
-            Debe completar todos los campos
-        </div>";
-        return;
+  require_once('backend/model/Usuario.php');
+  $usuario = new Usuario();
+  if(!isset( $_POST['email'] ) && !isset( $_POST['dni'])
+    && !isset( $_POST['nombre']) && !isset($_POST['contraseña'])) {
+      echo "<div >
+              Debe completar todos los campos
+          </div>";
+          return;
   }
- 
+
   $nombre = $_POST['nombre'];
   $identificacion = $_POST['dni'];
   $email = $_POST['email'];
@@ -28,6 +28,4 @@
     echo "<script>alert('error al registrar usuario') </script>";
     header('location: /Paginas/index-dependencias/registro_pasajero.html'); 
   }
- 
-
 ?>
