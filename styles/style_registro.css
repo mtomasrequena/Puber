@@ -10,7 +10,7 @@ header{
 }
 
 body {
-    background-image: url(../flujo-home-usuario/img-home/fondo.jpg);
+    background-image: url('../img/fondo.jp');
     background-size: cover;
 }
 

@@ -18,7 +18,7 @@
         session_start();
         $_SESSION['email'] = $respuesta[0]['email'];
         $_SESSION['persona_id'] = $respuesta[0]['persona_id'];
-        $_SESSION['rol_id'] = $respuesta[0]['rol_id'];
+        $_SESSION['id_usuario'] = $respuesta[0]['id_usuario'];
 
         header('location: Paginas/home-dependencias/home.php');
     } else {

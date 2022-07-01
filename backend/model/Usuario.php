@@ -21,19 +21,19 @@
             return $this->rows;
         }
 
-        /*public function RegistrarPasajero(){
-            $this->query = "INSERT INTO personas (nombre, apellido, email, password, telefono, rol_id)
-                            VALUES(:nombre, :apellido, :email, :password, :telefono, :rol_id)";
+        public function RegistrarPasajero(){
+            $this->query = "INSERT INTO usuario (usuario.email, usuario.contraseña, usuario.identificacion, usuario.nombre, usuario.id_rol)
+                            VALUES(:email, :password, :identificacion, :nombre, 1)";
 
             $this->ejecutar( array(
                 ':nombre' => $this->nombre,
-                ':apellido' => $this->apellido,
                 ':email' => $this->email,
                 ':password' => $this->password,
-                ':telefono' => $this->telefono,
-                ':rol_id' => $this->rol_id
+                ':identificacion' => $this->identificacion
             ));
-        }*/
+
+            return true;
+        }
 
        /* public function actualizar(){
             $this->query = "UPDATE personas 
