@@ -5,7 +5,7 @@
     background-image: url(../../img/background-avatar.jfif);
     background-attachment:fixed;
     background-repeat: no-repeat;
-    background-size: 100% 58%;
+    background-size: 100% 45%;
     padding: 3% 0 1% 0;
     margin: 6% 18% 0 18%;
     border: 1px solid lightgray;
@@ -26,7 +26,7 @@
 .container_img{
     border-radius: 60%;
     width: auto;
-    height: 30vh;
+    height: 20vh;
 }
 
 .container_name-avatar{

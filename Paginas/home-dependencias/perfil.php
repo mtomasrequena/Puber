@@ -10,7 +10,7 @@ require_once('../../Componentes/header-home.html')
   <div class="container_init">
   <div class="container_picture">
     <div class="container_avatar">
-        <img class="container_img img-fluid" src="../../img/avatar-usuario.jpg" alt="eliiiii">
+        <img class="container_img img-fluid" src="../../img/avatar.png" alt="eliiiii">
         <div class="container_name-avatar">
             <span>Elizabeth</span>
         </div>

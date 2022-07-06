@@ -6,6 +6,7 @@
         public $id_usuario;
         public $nombre;
         public $email;
+        public $telefono;
         public $identificacion;
         public $id_rol;
         public $password; //contraseña en BD
@@ -22,14 +23,16 @@
         }
 
         public function RegistrarPasajero(){
-            $this->query = "INSERT INTO usuario (usuario.email, usuario.contraseña, usuario.identificacion, usuario.nombre, usuario.id_rol)
-                            VALUES(:email, :password, :identificacion, :nombre, 1)";
+            $this->query = "INSERT INTO usuario (usuario.email,usuario.telefono, usuario.contraseña, usuario.identificacion, usuario.nombre, usuario.id_rol)
+                            VALUES(:email,:telefono ,:password, :identificacion, :nombre, 1)";
 
             $this->ejecutar( array(
                 ':nombre' => $this->nombre,
+                ':telefono' => $this->telefono,
                 ':email' => $this->email,
                 ':password' => $this->password,
                 ':identificacion' => $this->identificacion
+                
             ));
 
             return true;
