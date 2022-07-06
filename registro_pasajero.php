@@ -8,7 +8,7 @@
         </div>";
         return;
   }
- 
+
   $nombre = $_POST['nombre'];
   $identificacion = $_POST['dni'];
   $email = $_POST['email'];
@@ -30,6 +30,4 @@
     echo "<script>alert('error al registrar usuario') </script>";
     header('location: /Paginas/index-dependencias/registro_pasajero.html'); 
   }
- 
-
 ?>

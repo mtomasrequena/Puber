@@ -38,7 +38,7 @@
             return true;
         }
 
-       /* public function actualizar(){
+        /* public function actualizar(){
             $this->query = "UPDATE personas 
                             SET nombre = :nombre,
                                 apellido = :apellido,

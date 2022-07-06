@@ -6,7 +6,7 @@ require_once('../../Componentes/header-home.html')
   <?php    
     require_once('../../Componentes/nav-home.html');
   ?>
- 
+
   <!--Main-->
   <div class="pantalla-principal-home">
     
