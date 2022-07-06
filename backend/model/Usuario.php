@@ -1,5 +1,5 @@
 <?php
-    require_once('backend/core/conexionBD.php');
+    require_once ($_SERVER['DOCUMENT_ROOT'].'/backend/core/conexionBD.php');
     
     class Usuario extends ConexionPDO{
         // Atributos
@@ -36,6 +36,14 @@
             ));
 
             return true;
+        }
+
+        public function getInfoUser($id_user) {
+            $this->query = "SELECT * FROM usuario WHERE usuario.id_usuario = :id;";
+            $this->obtenerRows(array(
+                ':id' => $id_user
+            ));
+            return $this->rows;
         }
 
         /* public function actualizar(){

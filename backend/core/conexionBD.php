@@ -1,5 +1,5 @@
 <?php
-    require_once('backend/core/configuracion.php');
+    require_once($_SERVER['DOCUMENT_ROOT'].'/backend/core/configuracion.php');
 
     // Al finalizar las consultas ejecutar metodo desconectar()
     class ConexionPDO { 
