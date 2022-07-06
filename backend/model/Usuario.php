@@ -46,22 +46,31 @@
             return $this->rows;
         }
 
-        /* public function actualizar(){
-            $this->query = "UPDATE personas 
-                            SET nombre = :nombre,
-                                apellido = :apellido,
-                                password  = :password,
-                                telefono = :telefono
-                            WHERE persona_id = :persona_id ";
+        public function actualizarUser($id_usuario){
+            $this->query = "UPDATE usuario SET usuario.email = :email, usuario.telefono = :telefono, 
+            usuario.contraseña = :password, usuario.identificacion = :identificacion, usuario.nombre = :nombre WHERE usuario.id_usuario = :id_user";
 
             $this->ejecutar( array(
                 ':nombre' => $this->nombre,
-                ':apellido' => $this->apellido,
+                ':email' => $this->email,
                 ':password' => $this->password,
                 ':telefono' => $this->telefono,
-                ':persona_id' => $this->persona_id
+                ':identificacion' => $this->identificacion,
+                ':id_user' => $id_usuario
             ));
-        }*/
+
+            return true;
+        }
+
+        public function deleteUser($id_user) {
+            $this->query = "DELETE FROM usuario where usuario.id_usuario = :id_user";
+
+            $this->ejecutar( array(
+                ':id_user' => $id_user
+            ));
+
+            return true;
+        }
 
     }
 

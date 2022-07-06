@@ -11,9 +11,7 @@ session_start();
   $b=1;
     $usuario = new Usuario();
     $idUser = $_SESSION['id_usuario'];
-    $result = $usuario->getInfoUser($idUser);
-    // echo $result[0]['email'];
-   
+    $result = $usuario->getInfoUser($idUser); 
 ?>
 
 <?php if ( $a==$b ) { ?>
@@ -41,6 +39,11 @@ session_start();
     <div class="container_item">
       <span>Calificacion: </span>
       <span>5 estrellitas</span>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+    <button class="btn btn-primary" style="font-size: 1.7rem; border-radius: 0.4rem;" onclick="window.location.href='update-user.html'">
+                  Actualizar Usuario
+                </button>
     </div>
 </div>
 </div>
